@@ -30,6 +30,11 @@ public class AppArrays {
         System.out.println(Arrays.deepToString(matriz));
 
 
+        // Alerando UMA LINHA TODA:
+        matriz[1] = new double[]{400, 500, 600};
+        System.out.println(Arrays.deepToString(matriz));
+
+
 
 
     }

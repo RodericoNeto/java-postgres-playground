@@ -1,6 +1,7 @@
 package com.example;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class AppArrays {
     public static void main(String[] args){
@@ -34,7 +35,31 @@ public class AppArrays {
         matriz[1] = new double[]{400, 500, 600};
         System.out.println(Arrays.deepToString(matriz));
 
+        System.out.printf("%6.2f", vetor[1]);
+        System.out.println(); 
 
+        double[] arrayNumDouble = new double[5];
+        System.out.println(Arrays.toString(arrayNumDouble));
+        
+        Random random = new Random();
+
+        for (int i = 0; i < arrayNumDouble.length; i++){
+            
+            double randomDouble = random.nextDouble();
+            arrayNumDouble[i] = randomDouble;
+        }
+
+        System.out.printf(Arrays.toString(arrayNumDouble));
+
+        for (int i = 1; i <= arrayNumDouble.length; i++){
+            System.out.println(arrayNumDouble[arrayNumDouble.length - i]);
+        }
+
+        System.out.println();
+
+        System.out.printf("O primeiro número formatado é %-8.2f", arrayNumDouble[0]);
+
+        double numAleat = Math.round(Math.random() * 10);
 
 
     }

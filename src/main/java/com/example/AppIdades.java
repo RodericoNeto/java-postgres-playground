@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
+import com.example.model.Cidadao;
+
 public class AppIdades {
     public static void main(String[] args) {
         System.out.println("uobaaa");

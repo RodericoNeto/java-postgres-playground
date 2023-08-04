@@ -8,6 +8,9 @@ public class Cliente {
 
     private char sexo;
 
+    private String nome;
+
+
     private boolean clienteEspecial;
     //obs: todo atributo boolean vem com "FALSE" POR PADRÃO
 
@@ -44,6 +47,12 @@ public class Cliente {
         return sexo;
     }
 
+
+    
+    public String getNome() {
+        return nome;
+    }
+
     // SETTERS
 
     public void setRenda(double renda){
@@ -61,6 +70,18 @@ public class Cliente {
         else
             System.out.println("O sexo tem que ser M ou F");
     }
+
+
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    public String toString(){
+        return "Cliente: " + nome + ". Renda: " + renda;
+    }
+
 
 
 
